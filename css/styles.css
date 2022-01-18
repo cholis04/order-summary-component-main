@@ -7,4 +7,49 @@
     color: hsl(228, 45%, 44%);
   } */
 
-/* ################# My Solution CSS ####################### */
+/* ############################## ↓ My Solution CSS ↓ ####################### */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.container main {
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* ######### DESKTOP ################## */
+@media only screen and (min-width: 580px) {
+  body {
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+}
+/* ######### DESKTOP ################## */
