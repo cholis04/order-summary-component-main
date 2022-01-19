@@ -1,12 +1,3 @@
-/* .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  } */
-
 /* ############################## ↓ My Solution CSS ↓ ####################### */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
 
@@ -29,7 +20,7 @@ body {
   background-color: var(--pale-blue);
   background-image: url('../images/pattern-background-mobile.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .container {
@@ -46,10 +37,148 @@ body {
   place-items: center;
 }
 
+/* SUMMARY CARD ###################################### */
+.summary-card {
+  width: 88%;
+  max-width: 460px;
+  min-height: 540px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 8px 15px -6px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+}
+
+.summary-card .thumbnail > img {
+  display: block;
+  width: 100%;
+}
+.summary-card .summary-card-body {
+  margin: auto;
+  max-width: 360px;
+  width: 90%;
+  padding-top: 20px;
+}
+.summary-card .summary-card-body > h2 {
+  margin: 20px auto;
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--dark-blue);
+  text-align: center;
+}
+.summary-card .summary-card-body > p {
+  padding: 0 12px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 600;
+  color: var(--desaturated-blue);
+  text-align: center;
+}
+.summary-card .summary-card-body .detail-plan {
+  margin-bottom: 30px;
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--very-pale-blue);
+}
+
+.summary-card .summary-card-body .detail-plan > .pricing {
+  padding: 0 18px;
+  flex-grow: 1;
+}
+.summary-card .summary-card-body .detail-plan > .pricing > h4 {
+  font-size: 16px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+.summary-card .summary-card-body .detail-plan > .pricing > p {
+  font-size: 16px;
+  line-height: 180%;
+  font-weight: 600;
+  color: var(--desaturated-blue);
+}
+.summary-card .summary-card-body .detail-plan > .action > a.btn-change {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--bright-blue);
+  transition: all 0.2s ease-in;
+}
+.summary-card .summary-card-body .detail-plan > .action > a.btn-change:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.summary-card .summary-card-body .wrap-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.summary-card .summary-card-body .wrap-button > .btn-submit {
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 16px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--bright-blue);
+  box-shadow: 0 8px 25px -6px hsla(245, 75%, 52%, 0.658);
+  transition: all 0.2s ease-in;
+}
+.summary-card .summary-card-body .wrap-button > .btn-submit:hover {
+  opacity: 0.7;
+}
+.summary-card .summary-card-body .wrap-button > .btn-submit:active {
+  background-color: var(--dark-blue);
+  color: var(--very-pale-blue);
+  box-shadow: none;
+}
+.summary-card .summary-card-body .wrap-button > .btn-cancel {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: color 0.2s ease-in;
+}
+.summary-card .summary-card-body .wrap-button > .btn-cancel:hover {
+  color: var(--dark-blue);
+}
+
+/* SUMMARY CARD ###################################### */
+
+/* ######################## ATRIBUTION #######################*/
+.attribution {
+  margin: 60px auto;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* ######################## ATRIBUTION #######################*/
+
 /* ######### DESKTOP ################## */
+
 @media only screen and (min-width: 580px) {
   body {
     background-image: url('../images/pattern-background-desktop.svg');
   }
+
+  /* SUMMARY CARD ###################################### */
+  .summary-card .summary-card-body > h2 {
+    font-size: 28px;
+  }
+  .summary-card .summary-card-body > p {
+    padding: 0 20px;
+  }
+  /* SUMMARY CARD ###################################### */
 }
+
 /* ######### DESKTOP ################## */
