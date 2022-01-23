@@ -89,7 +89,7 @@ body {
   padding: 0 18px;
   flex-grow: 1;
 }
-.summary-card .summary-card-body .detail-plan > .pricing > h4 {
+.summary-card .summary-card-body .detail-plan > .pricing > h2 {
   font-size: 16px;
   color: var(--dark-blue);
   font-weight: 900;
