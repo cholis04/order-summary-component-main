@@ -58,7 +58,7 @@ body {
   width: 90%;
   padding-top: 20px;
 }
-.summary-card .summary-card-body > h2 {
+.summary-card .summary-card-body > h1 {
   margin: 20px auto;
   font-weight: 900;
   font-size: 24px;
@@ -172,7 +172,7 @@ body {
   }
 
   /* SUMMARY CARD ###################################### */
-  .summary-card .summary-card-body > h2 {
+  .summary-card .summary-card-body > h1 {
     font-size: 28px;
   }
   .summary-card .summary-card-body > p {
